@@ -24,7 +24,7 @@ html {
 }
 
 .movie-card {
-    margin-top: 5rem;
+    margin-top: 4rem;
     height: 800px;
     text-align: center;
 }
@@ -136,4 +136,51 @@ footer ul li a {
 
 @keyframes slide-from-right {
     100% {right: 0;}
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(73, 78, 86, 0.534);
+    z-index: 2;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.modal-content {
+    background-color: rgb(178, 213, 232);
+    margin: 5% auto;
+    padding: 5rem;
+    width: 600px;
+    height: 600px;
+    animation: zoom-in 1s;
+    color: aliceblue;
+}
+
+@keyframes zoom-in {
+    0% {transform: scale(0);}
+    100% {transform: scale(1);}
+}
+
+.closeBtn {
+    float: right;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.movie-poster-modal {
+    margin-top: -10px;
+}
+
+
+
+
+
+
+
+.movie-poster {
+    cursor: pointer;
 }

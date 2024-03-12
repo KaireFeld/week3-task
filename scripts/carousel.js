@@ -1,4 +1,3 @@
-console.log('hello from script');
 const slides = document.getElementsByClassName('carousel__item');
 const slidesTotal = slides.length;
 console.log(slidesTotal);
